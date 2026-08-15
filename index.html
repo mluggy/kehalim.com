@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kehalim Ltd.</title>
+<meta name="description" content="Kehalim Ltd. — an Israeli software company building consumer products.">
+<style>
+  :root {
+    --bg: #fafaf8;
+    --ink: #1a1a18;
+    --muted: #6b6b66;
+    --accent: #0a5c36;
+    --rule: #e4e4df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141412;
+      --ink: #ececea;
+      --muted: #9a9a94;
+      --accent: #5dbd8b;
+      --rule: #2a2a27;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    min-height: 100svh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+  }
+  main { max-width: 34rem; width: 100%; }
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+    font-weight: 650;
+  }
+  h1 .he {
+    color: var(--muted);
+    font-weight: 400;
+    margin-inline-start: 0.5rem;
+  }
+  p.lede { margin-top: 1rem; }
+  p.product { margin-top: 1rem; color: var(--muted); }
+  p.product b { color: var(--ink); font-weight: 600; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1.25rem; }
+  .contact { color: var(--muted); font-size: 0.95rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 0.4rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kehalim Ltd.<span class="he" lang="he">קהלים בע״מ</span></h1>
+  <p class="lede">An Israeli software company building consumer products.</p>
+  <p class="product">Now building <b>רציף&nbsp;·&nbsp;Ratzif</b> — live train departures in your iPhone's Dynamic&nbsp;Island. Coming to the App&nbsp;Store.</p>
+  <hr>
+  <p class="contact">Contact: <a href="mailto:mlugassy@kehalim.com">mlugassy@kehalim.com</a></p>
+  <footer>© 2026 Kehalim Ltd. · Israel</footer>
+</main>
+</body>
+</html>

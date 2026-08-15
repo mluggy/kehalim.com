@@ -5,27 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kehalim Ltd.</title>
 <meta name="description" content="Kehalim Ltd. — an Israeli software company building consumer products.">
+<link rel="icon" type="image/png" href="logo.png">
 <style>
   :root {
-    --bg: #fafaf8;
-    --ink: #1a1a18;
-    --muted: #6b6b66;
-    --accent: #0a5c36;
-    --rule: #e4e4df;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #141412;
-      --ink: #ececea;
-      --muted: #9a9a94;
-      --accent: #5dbd8b;
-      --rule: #2a2a27;
-    }
+    --ink: #28587b;      /* logo navy */
+    --body: #33454f;
+    --muted: #7d8b94;
+    --accent: #28587b;
+    --gold: #f0c419;     /* logo yellow */
+    --rule: #e3e9ed;
   }
   * { box-sizing: border-box; margin: 0; }
   body {
-    background: var(--bg);
-    color: var(--ink);
+    background: #fff;
+    color: var(--body);
     font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     display: flex;
     min-height: 100svh;
@@ -34,28 +27,26 @@
     padding: 2rem 1.25rem;
   }
   main { max-width: 34rem; width: 100%; }
+  .logo { width: min(17rem, 70%); height: auto; display: block; margin-bottom: 1.5rem; }
   h1 {
-    font-size: 1.6rem;
-    letter-spacing: -0.01em;
-    font-weight: 650;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
   }
-  h1 .he {
-    color: var(--muted);
-    font-weight: 400;
-    margin-inline-start: 0.5rem;
-  }
-  p.lede { margin-top: 1rem; }
+  h1 .he { color: var(--muted); font-weight: 400; margin-inline-start: 0.5rem; }
+  p.lede { margin-top: 0.75rem; }
   p.product { margin-top: 1rem; color: var(--muted); }
-  p.product b { color: var(--ink); font-weight: 600; }
+  p.product b, p.product b a { color: var(--ink); font-weight: 600; }
   hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1.25rem; }
   .contact { color: var(--muted); font-size: 0.95rem; }
   a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  a:hover { text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 2px; }
   footer { margin-top: 0.4rem; color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
 <main>
+  <img class="logo" src="logo.png" alt="Kehalim" width="1446" height="714">
   <h1>Kehalim Ltd.<span class="he" lang="he">קהלים בע״מ</span></h1>
   <p class="lede">An Israeli software company building consumer products.</p>
   <p class="product">Maker of <b><a href="https://teslarpi.com">TeslaBox</a></b> — Sentry Mode alerts with video for Tesla.</p>
